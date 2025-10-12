@@ -1,5 +1,4 @@
 
-// Additional setup: initialize both validators and handle modal/tab lifecycle
 (function ($) {
     $(document).ready(function () {
         const loginAlert = `

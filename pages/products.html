@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Shop - Bootstrap</title>
+
+  <script>
+    const pageLimit = 2100;
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > pageLimit) {  // adjust limit
+        window.scrollTo(0, pageLimit);
+      }
+    });
+  </script>
+
+  <!-- Bootstrap CSS (comment out to see plain HTML) -->
+  <link href="..\styles.css" rel="stylesheet">
+  <script src="..\dist\bootstrap.bundle.min.js"></script>
+  <script src="../dist/jquery.min.js"></script>
+  <script src="../dist/jquery.validate.min.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">E-Shop</a>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">🛒 Cart</a></li>
+          <li class="nav-item px-4"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#authModal">Log In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PRODUCTS SECTION -->
+  <div class="container-fluid custom-secondary">
+
+    <!-- Top row with title, price and button -->
+    <div class="row mb-4 py-3" style="background-color: #dee1a2;">
+
+      <div class="col-8">
+        <h2 class="text-start px-5" style="color: #7f807b;">Natural Emotions</h2>
+        <h4 class="text-start px-5" style="color: #989988;">The starter emotions for the human experience</h4>
+      </div>
+      <div class="col-4 d-md-flex justify-content-md-end">
+        <h2 class="text-end my-4" style="color: #7f807b;">$49.00</h2>
+        <button class="btn custom-primary mx-5 my-4" style="color: #e5e4fa">Add To Cart</button>
+      </div>
+    </div>
+
+    <!-- Products row -->
+    <div class="row justify-content-start px-5 pb-3">
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/natural/happiness.png" class="card-img-top" alt="Happiness">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Happiness</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/natural/sadness.png" class="card-img-top" alt="Sadness">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Sadness</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/natural/anger.png" class="card-img-top" alt="Anger">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Anger</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/natural/fear.png" class="card-img-top" alt="Fear">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Fear</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/natural/relief.png" class="card-img-top" alt="Relief">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Relief</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- EXPANDED SECTION -->
+    <!-- Top row with title, price and button -->
+    <div class="row mb-4 py-3" style="background-color: #dee1a2;">
+
+      <div class="col-8">
+        <h2 class="text-start px-5" style="color: #7f807b;">Expanded Emotions</h2>
+        <h4 class="text-start px-5" style="color: #989988;">Go beyond what you are given naturally!</h4>
+      </div>
+      <div class="col-4 d-md-flex justify-content-md-end">
+        <h2 class="text-end my-4" style="color: #7f807b;">$129.99</h2>
+        <button class="btn custom-primary mx-5 my-4" style="color: #e5e4fa">Add To Cart</button>
+      </div>
+    </div>
+
+    <!-- Products row -->
+    <div class="row justify-content-start px-5 pb-3">
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/expanded/degrence.png" class="card-img-top" alt="Degrence">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Degrence</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/expanded/humber.png" class="card-img-top" alt="Humber">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Humber</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/expanded/nage.png" class="card-img-top" alt="Nage">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Nage</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/expanded/andric.png" class="card-img-top" alt="Andric">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Andric</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/expanded/varination.png" class="card-img-top" alt="Varination">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Varination</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/expanded/ponnish.png" class="card-img-top" alt="Ponnish">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Ponnish</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/expanded/teluge.png" class="card-img-top" alt="Teluge">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Teluge</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/expanded/loric.png" class="card-img-top" alt="Loric">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Loric</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- PREMIUM SECTION -->
+    <!-- Top row with title, price and button -->
+    <div class="row mb-4 py-3" style="background-color: #dee1a2;">
+
+      <div class="col-8">
+        <h2 class="text-start px-5" style="color: #7f807b;">Premium Emotions</h2>
+        <h4 class="text-start px-5" style="color: #989988;">-----</h4>
+      </div>
+      <div class="col-4 d-md-flex justify-content-md-end">
+        <h2 class="text-end my-4" style="color: #7f807b;">$--.--</h2>
+        <button class="btn custom-primary mx-5 my-4 disabled" style="color: #e5e4fa">Add To Cart</button>
+      </div>
+    </div>
+
+    <!-- Products row -->
+    <div class="row justify-content-start px-5 pb-3">
+
+      <div class="col-2 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/premium/dorcelessness.png" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Dorcelessness</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/premium/harfam.png" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">harfam</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/premium/kyne.png" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">kyne</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/premium/trantiveness.png" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Trantiveness</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/premium/un.png" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">un</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2 pb-3">
+        <div class="card mx-3" style="width: 18rem; background-color: #605EA1;">
+          <img src="../img/premium/naritrance.png" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title" style="color: #dedee0;">Naritrance</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <!-- for the login and signup modal -->
+  <div id="authModalContainer"></div>
+  <!-- page loader script -->
+  <script src="pageLoader.js"></script>
+
+
+</body>
+
+</html>

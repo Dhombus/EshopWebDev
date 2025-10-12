@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Shop — Cart</title>
+
+  <link href="../styles.css" rel="stylesheet">
+  <script src="../dist/bootstrap.bundle.min.js"></script>
+  <script src="../dist/jquery.min.js"></script>
+  <script src="../dist/jquery.validate.min.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">E-Shop</a>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cart.html">🛒 Cart</a></li>
+          <li class="nav-item px-4"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#authModal">Log
+              In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid custom-secondary py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="mb-0">Your Cart</h2>
+            <small class="text-muted">2 items</small>
+          </div>
+
+          <!-- Cart item 1 -->
+          <div class="card mb-3 cart-item custom-secondary-dark">
+            <div class="row g-0 align-items-center">
+              <div class="col-auto p-3">
+                <img src="../img/natural/item.png" class="img-fluid rounded" alt="Natural Emotions"
+                  style="width:120px; height:auto;">
+              </div>
+              <div class="col">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                      <div class="product-title">Natural Emotions</div>
+                    </div>
+                    <div class="text-end">
+                      <div class="h5 mb-0">$49.99</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cart item 2 -->
+          <div class="card mb-3 cart-item custom-secondary-dark">
+            <div class="row g-0 align-items-center">
+              <div class="col-auto p-3">
+                <img src="../img/expanded/item.png" class="img-fluid rounded" alt="Expanded Emotions"
+                  style="width:120px; height:auto;">
+              </div>
+              <div class="col">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                      <div class="product-title">Expanded Emotions</div>
+                    </div>
+                    <div class="text-end">
+                      <div class="h5 mb-0">$129.99</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-muted small mt-2">We are not responsible for further side effects these emotions may entail.
+          </p>
+        </div>
+
+        <!-- Order summary -->
+        <aside class="col-lg-4">
+          <div class="card custom-secondary-dark">
+            <div class="card-body">
+              <h5 class="order-summary mb-3">Order summary</h5>
+              <dl class="row small">
+                <dt class="col-7">Items subtotal</dt>
+                <dd class="col-5 text-end">$179.98</dd>
+
+                <dt class="col-7">Tax</dt>
+                <dd class="col-5 text-end">$19.99</dd>
+
+                <dt class="col-7">Delivery</dt>
+                <dd class="col-5 text-end">$4.99</dd>
+
+                <dt class="col-7">Total</dt>
+                <dd class="col-5 text-end h5">$204.96</dd>
+              </dl>
+
+              <div class="d-grid mt-3">
+                <a href="#" class="btn btn-primary btn-lgn custom-primary">Proceed to Checkout</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- for the login and signup modal -->
+  <div id="authModalContainer"></div>
+  <!-- page loader script -->
+  <script src="pageLoader.js"></script>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark custom-primary text-white text-center py-3">
+    <div class="container">
+      <small>© 2025 E-Shop | Since 1263</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>

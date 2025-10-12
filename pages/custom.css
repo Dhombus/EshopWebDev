@@ -1,0 +1,31 @@
+.custom-primary {
+    background-color: #605EA1 !important;
+}
+
+.custom-secondary {
+    background-color: #E6E9AF !important;
+}
+
+.custom-secondary-dark {
+    background-color: #DEE1A2 !important;
+}
+
+.custom-card-text {
+    color: #dedee0 !important;
+}
+
+.custom-header-text {
+    color: #a9a9a9 !important;
+}
+
+.cart-item { 
+    border: 1px solid rgba(0,0,0,.06);
+}
+    
+.cart-item .product-title { 
+    font-size: 1.05rem; font-weight: 600;
+}
+
+.order-summary h5 { 
+    font-weight: 700;
+}

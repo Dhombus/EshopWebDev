@@ -1,0 +1,34 @@
+@import "dist/styles.css";
+
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.custom-primary {
+    background-color: #605EA1 !important;
+}
+
+.custom-primary-dark {
+    background-color: #4a487d !important;
+}
+
+.custom-secondary {
+    background-color: #E6E9AF !important;
+}
+
+.custom-secondary-dark {
+    background-color: #DEE1A2 !important;
+}
+
+.custom-header-text {
+    color: #7f807b !important;
+}
+
+.custom-card-text {
+    color: #dedee0 !important;
+}
+
+
+/* learn watchers improve the bootstrap page*/

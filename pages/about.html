@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Shop - Bootstrap</title>
+
+  <!-- Bootstrap CSS (comment out to see plain HTML) -->
+  <link href="..\styles.css" rel="stylesheet">
+  <script src="../dist/bootstrap.bundle.min.js"></script>
+  <script src="../dist/jquery.min.js"></script>
+  <script src="../dist/jquery.validate.min.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">E-Shop</a>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">🛒 Cart</a></li>
+          <li class="nav-item px-4"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#authModal">Log In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- ABOUT SECTION -->
+  <section class="py-5 custom-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="custom-header text-start">About Us</h2>
+          <p class="mb-3 text-start">
+            We have existed since 1263 as a group dedicated to find the true extent of what the human mind is capable of experiencing.
+            We believe that the natural human psyche given to us since birth is limited and that the true potential of the mind can be unlocked through external means.
+          </p>
+
+          <p>
+            Started by out Great Founder, █████████, who has devoted his life to "Going Beyond", we have tried our best to honor and ensure that his life's work does not go unnoticed.
+            While the general public may have not accepted our practices and our pasts attempts have been met with controversy, we believe that one day, the world will come to understand and appreciate the true nature of the human mind. 
+          </p>
+
+          <div class="mt-4" style="display:flex; align-items:flex-start; gap:16px;">
+            <div style="flex:0 0 160px;">
+              <img src="../img/ceo.png" alt="CEO headshot" style="width:160px; height:200px; object-fit:cover; border:2px solid #ccc; background:#fff; display:block;">
+              <p style="font-size:12px; margin-top:6px; margin-bottom:0;">Our current leader ████████ ██████ experiencing a new emotion (unnamed)</p>
+            </div>
+
+            <div style="flex:1 1 auto;">
+              <p class="small text-start">████████ ██████, Website Owner and Leader</p>
+              <p class="small text-start">"I was given this role once I finally understood the group's vision, so I built this website as another medium to share our latest works to the public."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- for the login and signup modal -->
+  <div id="authModalContainer"></div>
+  <!-- page loader script -->
+  <script src="pageLoader.js"></script>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark custom-primary text-white text-center py-3">
+    <p class="mb-0">© 2025 E-Shop | Since 1263</p>
+  </footer>
+
+</body>
+
+</html>
